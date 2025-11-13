@@ -4,8 +4,10 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ title }) => {
     return (
-        <nav className="bg-gray-800 p-4">
-            <h1 className="text-white text-2xl font-bold">{title}</h1>
+        <nav className="bg-gray-800 p-4 fixed w-full top-0 left-0 z-20">
+            <img src="/logo.png" alt="Logo" className="h-8 w-8 inline-block mr-2" />
+            <span className="text-white text-lg font-semibold">{title}</span>
+            <img src="icons/hamburger.png" alt="Menu" className="h-6 w-6 inline-block float-right" />
         </nav>
     );
 };

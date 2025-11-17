@@ -16,6 +16,7 @@ const Footer: React.FC<FooterProps> = ({ year }) => {
             <a href="https://unsplash.com/photos/person-swimming-on-an-olympic-pool-ZbbhkQ0M2AM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" className="">swimming.jpg</a>
             <a href="https://unsplash.com/photos/a-wooden-staircase-in-a-room-Aue1vt5naxA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" className="">health-area.jpg</a>
             <a href="https://www.freepik.com/free-photo/group-happy-people-sitting-floor-after-workout_3614698.htm">membership.jpg</a>
+            <p>book-tour.jpg Photo by <a href="https://unsplash.com/@dncerullo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Danielle Cerullo</a> on <a href="https://unsplash.com/photos/woman-standing-surrounded-by-exercise-equipment-CQfNt66ttZM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
         </footer>
     );
 };

@@ -1,3 +1,5 @@
+import PricingCard from "../Cards/PricingCard";
+
 interface PricingSectionProps {
     className?: string;
 }

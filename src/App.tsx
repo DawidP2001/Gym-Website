@@ -1,17 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import HeroSection from './components/sections/HeroSection'
-import PricingSection from './components/sections/PricingSection'
+import HomePage from './components/Pages/HomePage'
 
 function App() {
 
   return (
     <>
       <Navbar title="Gym" />
-      <HeroSection />
-      <PricingSection />
+      <HomePage />
       <Footer year={2024} />
     </>
   )

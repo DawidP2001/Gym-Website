@@ -18,13 +18,13 @@ const Navbar: React.FC<NavbarProps> = ({ className, setPage }) => {
 
     return (
         <>
-            <nav className={`p-2 pb-4 fixed w-full top-0 left-0 z-20 bg-black shadow-lg ${className || ''}`}>
+            <nav className={`p-2 fixed w-full top-0 left-0 z-20 bg-black shadow-lg flex justify-between${className || ''}`}>
                 <span className="text-gray-200 text-3xl font-semibold">
                     <span className="text-lime-400 font-semibold">Midlands</span> Gyms
                 </span>
                 <button 
                     onClick={toggleMenu}
-                    className="float-right mt-1 p-1 hover:bg-gray-800 rounded transition-colors"
+                    className=" p-1 hover:bg-gray-800 rounded transition-colors"
                     aria-label="Toggle menu"
                 >
                     <img src="icons/hamburger.png" alt="Menu" className="h-8 w-8 invert" />

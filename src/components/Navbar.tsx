@@ -2,22 +2,18 @@ import React from 'react';
 
 interface NavbarProps {
     className?: string;
+    setPage: (page: string) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ className }) => {
+const Navbar: React.FC<NavbarProps> = ({ className, setPage }) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
 
     const menuItems = [
-        { label: 'Home', href: '#home' },
-        { label: 'Features', href: '#features' },
-        { label: 'Locations', href: '#locations' },
-        { label: 'Pricing', href: '#pricing' },
-        { label: 'Learn to Swim', href: '#learn-to-swim' },
-        { label: 'Book a Tour', href: '#book-tour' },
-        { label: 'Contact', href: '#contact' },
+        { label: 'Home', page: 'home' },
+        { label: 'Pricing', page: 'pricing' },
     ];
 
     return (
@@ -57,14 +53,16 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 </div>
                 <nav className="flex flex-col p-4">
                     {menuItems.map((item) => (
-                        <a
-                            key={item.href}
-                            href={item.href}
-                            onClick={closeMenu}
-                            className="text-white py-3 px-4 hover:bg-gray-800 hover:text-lime-400 rounded transition-colors"
+                        <button
+                            key={item.page}
+                            onClick={() => {
+                                setPage(item.page);
+                                closeMenu();
+                            }}
+                            className="text-white py-3 px-4 hover:bg-gray-800 hover:text-lime-400 rounded transition-colors text-left"
                         >
                             {item.label}
-                        </a>
+                        </button>
                     ))}
                 </nav>
             </div>

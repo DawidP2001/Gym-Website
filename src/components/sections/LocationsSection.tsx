@@ -6,9 +6,14 @@ interface LocationsSectionProps {
 const LocationsSection: React.FC<LocationsSectionProps> = ({ className }) => {
     return (
         <section id="locations" className={`locations-section w-full py-20 ${className || ''}`}>
-            <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/downtown-gym.jpg" />
-            <LocationCard locationName="Uptown Gym" address="456 Elm St, Cityville" imgSrc="images/uptown-gym.jpg" />
-            <LocationCard locationName="Suburb Gym" address="789 Oak St, Townsville" imgSrc="images/suburb-gym.jpg" />
+            <div className="grid grid-cols-2 gap-4 mx-2">
+                <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/locations/location1.jpg" />
+                <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/locations/location1.jpg" />
+                <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/locations/location1.jpg" />
+                <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/locations/location1.jpg" />
+                <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/locations/location1.jpg" />
+                <LocationCard locationName="Downtown Gym" address="123 Main St, Cityville" imgSrc="images/locations/location1.jpg" />
+            </div>
         </section>
     );
 }

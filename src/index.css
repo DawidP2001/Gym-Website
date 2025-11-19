@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lilita+One&family=PT+Serif+Caption:ital@0;1&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif; ;
   margin: 0;
 
   color-scheme: light dark;

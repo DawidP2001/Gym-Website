@@ -14,6 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ className, setPage }) => {
     const menuItems = [
         { label: 'Home', page: 'home' },
         { label: 'Pricing', page: 'pricing' },
+        { label: 'Facilities', page: 'facilities' },
+        { label: 'Classes', page: 'classes' },
+        { label: 'Contact', page: 'contact' },
     ];
 
     return (

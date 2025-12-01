@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 interface pricingCardProps {
     title: string;
     price: string;
@@ -20,9 +22,7 @@ const PricingCard: React.FC<pricingCardProps> = ({ title, price, features, butto
                     </li>
                 ))}
             </ul>
-            <button className="w-full bg-lime-400 hover:bg-lime-500 text-black font-semibold py-3 rounded transition-colors duration-300">
-                {buttonText}
-            </button>
+            <Button text={buttonText} className="w-full" />
         </div>
     );
 }
